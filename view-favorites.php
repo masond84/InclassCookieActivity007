@@ -42,7 +42,7 @@ $favorites = isset($_SESSION['favorites']) ? $_SESSION['favorites'] : [];
                 <?php foreach ($favorites as $favorite): ?>
                   <tr>
                       <td>
-                          <img src="images/art/works/small-square/<?php echo htmlspecialchars($favorite['ImageFileName']); ?>.jpg" alt="<?php echo htmlspecialchars($favorite['Title']); ?>">
+                          <img src="images/art/square-medium/<?php echo htmlspecialchars($favorite['ImageFileName']); ?>.jpg" alt="<?php echo htmlspecialchars($favorite['Title']); ?>">
                       </td>
                       <td>
                           <a href="single-painting.php?id=<?php echo htmlspecialchars($favorite['PaintingID']); ?>">
